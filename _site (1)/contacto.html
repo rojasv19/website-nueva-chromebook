@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Tu Empresa de Diseño UX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">TuLogo</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="empresa.html">Empresa</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Hablemos de tu Proyecto</h1>
+                <p>Estamos listos para escuchar tus ideas y convertirlas en realidades digitales excepcionales.</p>
+            </div>
+        </section>
+
+        <section class="contact-section content-section">
+            <div class="container contact-grid">
+                
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p>No dudes en contactarnos directamente. Estamos disponibles para resolver cualquier duda y discutir tu proyecto.</p>
+                    <ul class="info-list">
+                        <li>
+                            <i data-feather="mail"></i>
+                            <a href="mailto:web@somospixart.com">web@somospixart.com</a>
+                        </li>
+                        <li>
+                            <i data-feather="phone"></i>
+                            <span>+58 (424) 555-1234</span>
+                        </li>
+                        <li>
+                            <i data-feather="map-pin"></i>
+                            <span>Av. Principal, Edificio Innova, Valencia, Venezuela</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form action="https://formspree.io/f/your-formspree-id" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tu Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Enviar Mensaje</button>
+                    </form>
+                    <p id="form-status"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Tu Empresa de Diseño UX. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
